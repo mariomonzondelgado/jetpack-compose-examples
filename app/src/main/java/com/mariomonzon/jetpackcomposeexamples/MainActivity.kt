@@ -10,6 +10,8 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.mariomonzon.jetpackcomposeexamples.navigation.AppNavigation
+import com.mariomonzon.jetpackcomposeexamples.screens.FirstScreen
 import com.mariomonzon.jetpackcomposeexamples.ui.theme.JetpackComposeExamplesTheme
 
 class MainActivity : ComponentActivity() {
@@ -17,7 +19,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MainContent {
-
+                AppNavigation()
             }
         }
     }
